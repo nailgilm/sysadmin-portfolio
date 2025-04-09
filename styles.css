@@ -1,0 +1,14 @@
+body {
+  background-image: url('images/optimized_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff; /* Белый цвет текста для контраста с фоном */
+}
+
+main, header, section {
+  background-color: rgba(0, 0, 0, 0.55); /* Полупрозрачный чёрный фон для улучшения читаемости */
+  padding: 1rem;
+  border-radius: 12px;
+}

@@ -1,89 +1,167 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <title>Портфолио — Наиль Рашитович</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-image: url('optimized_background.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            color: #2e2e2e;
-            margin: 0;
-            padding: 2rem;
-        }
-        .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            max-width: 800px;
-            margin: auto;
-            padding: 2rem;
-            border-radius: 16px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.25em;
-        }
-        h2 {
-            font-size: 1.4rem;
-            color: #555;
-        }
-        .section {
-            margin-top: 2rem;
-        }
-        .contacts a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .contacts a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио системного администратора: Linux, Windows, MikroTik, OpenWrt, Docker, Nginx и автоматизация инфраструктуры.">
+  <meta name="theme-color" content="#07111f">
+  <title>Наиль — системный администратор</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Наиль Рашитович</h1>
-        <h2>Системный администратор в Гимназии #19</h2>
+  <div class="page-glow page-glow--one"></div>
+  <div class="page-glow page-glow--two"></div>
 
-        <div class="section">
-            <h3>Обо мне</h3>
-            <p>Системный администратор с 3-летним опытом поддержки и развития ИТ-инфраструктуры в образовательной сфере.
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="В начало">NG<span>.</span></a>
+    <nav aria-label="Навигация">
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#skills">Навыки</a>
+      <a class="nav-contact" href="#contact">Связаться</a>
+    </nav>
+  </header>
 
-Ответственный и целеустремлённый. Умею работать с большим объёмом информации, быстро осваивать новые инструменты. Есть опыт администрирования Linux-серверов, работы с Docker, настройки веб-сервисов. Ценю порядок в системах и документации. Легко нахожу общий язык в команде, готов помогать коллегам и учиться новому.</p>
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Открыт к профессиональным предложениям</p>
+        <h1>Поддерживаю инфраструктуру <span>стабильной, понятной и безопасной.</span></h1>
+        <p class="hero-text">Наиль, системный администратор с 3-летним опытом в образовательной организации. Администрирую Windows и Linux, сети MikroTik и OpenWrt, контейнерные сервисы и автоматизирую повторяющиеся процессы.</p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#projects">Посмотреть проекты</a>
+          <a class="button button--ghost" href="mailto:anekirich@yandex.ru">Написать на почту</a>
         </div>
+      </div>
 
-        <div class="section">
-            <h3>Кредо</h3>
-            <p><em>Спокойствие в хаосе</em></p>
+      <aside class="terminal-card" aria-label="Краткий профиль">
+        <div class="terminal-top"><span></span><span></span><span></span><b>profile.sh</b></div>
+        <div class="terminal-body">
+          <p><i>$</i> whoami</p>
+          <strong>system_administrator</strong>
+          <p><i>$</i> focus --list</p>
+          <strong>networks · linux · automation</strong>
+          <p><i>$</i> principle</p>
+          <strong class="accent">«Спокойствие в хаосе»</strong>
+          <p><i>$</i> status</p>
+          <strong><span class="status-dot"></span> systems operational</strong>
         </div>
+      </aside>
+    </section>
 
-        <div class="section">
-            <h3>Интересный проект</h3>
-            <p>Реализовал проект по объединению двух отдельных подсетей с разными интернет-провайдерами в единую локальную сеть, что повысило стабильность и скорость доступа к ресурсам на 30%.</p>
+    <section class="metrics section-shell" aria-label="Профессиональный профиль">
+      <article><strong>3 года</strong><span>практического опыта</span></article>
+      <article><strong>Windows + Linux</strong><span>рабочие станции и серверы</span></article>
+      <article><strong>Сети + сервисы</strong><span>от DNS до публичного HTTPS</span></article>
+    </section>
+
+    <section class="section-shell content-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">Обо мне</p>
+        <h2>Не просто устраняю сбои — делаю так, чтобы они не повторялись.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="lead">Отвечаю за повседневную работу ИТ-инфраструктуры гимназии: от пользовательских компьютеров и сетевого доступа до серверов, удалённого администрирования и внутренних веб-сервисов.</p>
+        <div class="about-points">
+          <p><span>01</span> Разбираюсь в причине проблемы, документирую решение и по возможности автоматизирую его.</p>
+          <p><span>02</span> Умею объяснять технические вопросы пользователям без сложных терминов.</p>
+          <p><span>03</span> Осторожно работаю с действующей инфраструктурой: резервная копия, проверка, изменение, контроль результата.</p>
         </div>
+      </div>
+    </section>
 
-        <div class="section">
-            <h3>Профессиональные навыки</h3>
-            <ul>
-                <li>ОС: Debian Linux, работа с командной строкой</li>
-                <li>Контейнеризация: Docker, Portainer</li>
-                <li>Веб-серверы: Nginx (как reverse-proxy)</li>
-                <li>Сетевые технологии: iptables, SSH-туннели, проброс портов</li>
-                <li>Системы хранения: Nextcloud, управление дисками (ext4, монтирование)</li>
-                <li>Базы данных: MariaDB/MySQL (в Docker)</li>
-                <li>Диагностика: анализ логов, отладка сетевых проблем</li>
+    <section class="section-shell content-section" id="projects">
+      <div class="section-heading section-heading--row">
+        <div>
+          <p class="eyebrow">Избранные проекты</p>
+          <h2>Задачи, доведённые до работающего результата.</h2>
+        </div>
+        <a class="text-link" href="https://github.com/nailgilm" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-card--featured">
+          <div class="project-number">01</div>
+          <div>
+            <div class="project-tags"><span>PowerShell</span><span>Docker</span><span>Nginx</span></div>
+            <h3>Веб-расписание гимназии</h3>
+            <p>Создал публичный адаптивный сайт расписания с представлениями по классам, учителям и кабинетам. Автоматизировал экспорт из программы «Ректор», проверку изменений файла, безопасную доставку по SSH и атомарное обновление версии на Debian-сервере.</p>
+            <ul class="result-list">
+              <li>Обновление без ручной загрузки файлов</li>
+              <li>Docker, reverse proxy и автоматический TLS</li>
+              <li>Резервные копии и изолированный SSH-доступ издателя</li>
             </ul>
-        </div>
+            <a class="project-link" href="https://rasp.gymn19.ru" target="_blank" rel="noreferrer">Открыть работающий сайт ↗</a>
+          </div>
+        </article>
 
-        <div class="section contacts">
-            <h3>Контакты</h3>
-            <p>Email: <a href="mailto:anekirich@yandex.ru">anekirich@yandex.ru</a></p>
-            <p>Telegram: <a href="https://t.me/anekirich">@anekirich</a></p>
-        </div>
-    </div>
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-tags"><span>MikroTik</span><span>OpenWrt</span><span>DNS</span></div>
+          <h3>Связанная инфраструктура нескольких сетей</h3>
+          <p>Диагностировал маршрутизацию, DHCP, DNS и доступ между сегментами. Настроил управляемый доступ к роутерам, резервное копирование перед изменениями и восстановил корректную выдачу сетевых параметров клиентам.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-tags"><span>Debian</span><span>Docker Compose</span><span>HTTPS</span></div>
+          <h3>Самостоятельный хостинг внутренних сервисов</h3>
+          <p>Разворачиваю сервисы в Docker на Debian, настраиваю Nginx Proxy Manager, доменные имена, сертификаты Let’s Encrypt, health-check и автоматическое продление TLS.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <div class="project-tags"><span>Windows</span><span>Linux</span><span>SSH</span></div>
+          <h3>Поддержка и удалённое администрирование</h3>
+          <p>Поддерживаю пользовательские рабочие места и серверы, сетевые папки, доступы и удалённое управление. Анализирую логи и состояние служб, отделяю проблему клиента от проблемы сети или сервиса.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Компетенции</p>
+        <h2>Инструменты, с которыми решаю рабочие задачи.</h2>
+      </div>
+      <div class="skills-grid">
+        <article>
+          <h3>Системы</h3>
+          <div class="skill-list"><span>Debian Linux</span><span>Windows</span><span>Службы и журналы</span><span>Файловые ресурсы</span><span>Резервное копирование</span></div>
+        </article>
+        <article>
+          <h3>Сети</h3>
+          <div class="skill-list"><span>MikroTik RouterOS</span><span>OpenWrt</span><span>Маршрутизация</span><span>DHCP / DNS</span><span>NAT / Firewall</span><span>Диагностика</span></div>
+        </article>
+        <article>
+          <h3>Сервисы</h3>
+          <div class="skill-list"><span>Docker Compose</span><span>Nginx</span><span>Nginx Proxy Manager</span><span>Let’s Encrypt</span><span>MariaDB / MySQL</span><span>Nextcloud</span></div>
+        </article>
+        <article>
+          <h3>Автоматизация</h3>
+          <div class="skill-list"><span>PowerShell</span><span>Shell</span><span>SSH-ключи</span><span>Планировщик задач</span><span>Health checks</span><span>Git</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2>Нужен администратор, который берёт ответственность за результат?</h2>
+        <p>Готов обсудить инфраструктуру, поддержку пользователей, сети, Linux-сервисы и автоматизацию.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button button--light" href="mailto:anekirich@yandex.ru">anekirich@yandex.ru</a>
+        <a class="button button--outline-light" href="https://t.me/anekirich" target="_blank" rel="noreferrer">Telegram @anekirich</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <span>Наиль · Системный администратор</span>
+    <span>Россия · 2026</span>
+  </footer>
 </body>
 </html>

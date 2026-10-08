@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Портфолио системного администратора: Linux, Windows, MikroTik, OpenWrt, Docker, Nginx и автоматизация инфраструктуры.">
+  <meta name="description" content="Портфолио системного администратора: Linux, Windows, сети, Docker, локальный ИИ, управление ИИ-агентами и автоматизация инфраструктуры.">
   <meta name="theme-color" content="#07111f">
   <title>Наиль — системный администратор</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> Открыт к профессиональным предложениям</p>
         <h1>Поддерживаю инфраструктуру <span>стабильной, понятной и безопасной.</span></h1>
-        <p class="hero-text">Наиль, системный администратор с 3-летним опытом в образовательной организации. Администрирую Windows и Linux, сети MikroTik и OpenWrt, контейнерные сервисы и автоматизирую повторяющиеся процессы.</p>
+        <p class="hero-text">Наиль, системный администратор с 3-летним опытом в образовательной организации. Администрирую Windows и Linux, сети MikroTik и OpenWrt, контейнерные сервисы, разворачиваю локальный ИИ и использую ИИ-агентов для автоматизации и диагностики.</p>
         <div class="hero-actions">
           <a class="button button--primary" href="#projects">Посмотреть проекты</a>
           <a class="button button--ghost" href="mailto:anekirich@yandex.ru">Написать на почту</a>
@@ -43,7 +43,7 @@
           <p><i>$</i> whoami</p>
           <strong>system_administrator</strong>
           <p><i>$</i> focus --list</p>
-          <strong>networks · linux · automation</strong>
+          <strong>networks · linux · ai · automation</strong>
           <p><i>$</i> principle</p>
           <strong class="accent">«Спокойствие в хаосе»</strong>
           <p><i>$</i> status</p>
@@ -118,6 +118,20 @@
           <h3>Поддержка и удалённое администрирование</h3>
           <p>Поддерживаю пользовательские рабочие места и серверы, сетевые папки, доступы и удалённое управление. Анализирую логи и состояние служб, отделяю проблему клиента от проблемы сети или сервиса.</p>
         </article>
+
+        <article class="project-card">
+          <div class="project-number">05</div>
+          <div class="project-tags"><span>Ollama</span><span>Docker Compose</span><span>Local AI</span></div>
+          <h3>Локальный ИИ на Debian</h3>
+          <p>Развернул Ollama в Docker Compose и запустил локальную модель Qwen2.5-Coder 3B. Ограничил сервис четырьмя ядрами и 6 ГБ памяти, вынес модели в постоянный Docker volume и закрыл API на localhost.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">06</div>
+          <div class="project-tags"><span>AI Agents</span><span>Git</span><span>Проверка результата</span></div>
+          <h3>Работа с ИИ-агентами</h3>
+          <p>Разбиваю инфраструктурные и программные задачи на этапы для ИИ-агентов, задаю ограничения доступа, проверяю команды и изменения, тестирую результат и фиксирую рабочие версии в Git.</p>
+        </article>
       </div>
     </section>
 
@@ -141,7 +155,11 @@
         </article>
         <article>
           <h3>Автоматизация</h3>
-          <div class="skill-list"><span>PowerShell</span><span>Shell</span><span>SSH-ключи</span><span>Планировщик задач</span><span>Health checks</span><span>Git</span></div>
+          <div class="skill-list"><span>PowerShell</span><span>Shell</span><span>SSH-ключи</span><span>Планировщик задач</span><span>Health checks</span><span>Git</span><span>Управление ИИ-агентами</span></div>
+        </article>
+        <article>
+          <h3>Локальный ИИ</h3>
+          <div class="skill-list"><span>Ollama</span><span>Qwen2.5-Coder</span><span>Docker Compose</span><span>Локальный API</span><span>Лимиты CPU / RAM</span><span>Изоляция сервиса</span></div>
         </article>
       </div>
     </section>
